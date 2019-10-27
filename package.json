@@ -10,13 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:bigTimer.start",
+		"onCommand:bigTimer.setTimer"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
+		"commands": [ {
+			"command": "bigTimer.start",
+			"title": "Start the Big Timer!",
+			"category":"Big Timer"
+		}, {
+			"command": "bigTimer.setTimer",
+			"title": "Set the Big Timer!",
+			"category":"Big Timer"
 		}]
 	},
 	"scripts": {
